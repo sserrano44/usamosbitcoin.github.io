@@ -29,9 +29,9 @@ body {
 }
 
 /* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
+/*.header {*/
+  /*border-bottom: 1px solid #e5e5e5;*/
+/*}*/
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   padding-bottom: 19px;
@@ -92,4 +92,29 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+body {
+    background-image:url('/static/img/header.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top middle;
+    background-color: rgb(70, 145, 29);
+}
+
+#top-container .header {
+    min-height: 300px;
+    padding-top: 30px;
+}
+
+#top-container .header h3 {
+    color: rgb(30, 102, 131);
+}
+
+#top-container .header p {
+    font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+    #top-container .header p { width: 60%; }
 }
